@@ -1,0 +1,301 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.65;
+    letter-spacing: -0.011em;
+    color: #425466;
+    background-color: #fafbfc;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 96px 24px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 96px;
+}
+
+h1 {
+    font-size: 2.75rem;
+    font-weight: 600;
+    color: #0a2540;
+    margin-bottom: 24px;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+}
+
+.intro {
+    font-size: 1.125rem;
+    color: #425466;
+    max-width: 580px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+/* Main sections */
+main {
+    margin-bottom: 96px;
+}
+
+section {
+    margin-bottom: 120px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0a2540;
+    margin-bottom: 40px;
+    letter-spacing: -0.019em;
+}
+
+/* Protocol list - clean vertical list */
+.protocol-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.protocol-list li {
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.protocol-list li:nth-child(odd) {
+    background-color: #f8fafc;
+}
+
+.protocol-list li:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.protocol-list li:hover {
+    background-color: #e0e7ff;
+}
+
+.protocol-list li:hover a {
+    color: #4338ca;
+}
+
+.protocol-list li:hover .external-link-icon {
+    opacity: 1;
+}
+
+.protocol-list a {
+    text-decoration: none;
+    color: #0a2540;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 14px 16px;
+    transition: color 0.2s ease;
+    cursor: pointer;
+}
+
+.protocol-list .shield-icon {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+    color: #6366f1;
+}
+
+.protocol-list .protocol-name {
+    flex-grow: 1;
+}
+
+.protocol-list .external-link-icon {
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    margin-left: 12px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    color: #4338ca;
+}
+
+/* CTA Section */
+.cta {
+    text-align: center;
+    padding: 48px 0;
+    margin: 120px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #635bff;
+    color: #ffffff;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    transition: all 0.15s ease;
+    letter-spacing: -0.006em;
+    box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+.cta-button:hover {
+    background-color: #5851e8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(50, 50, 93, 0.2), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* FAQ Section */
+.faq {
+    margin-top: 120px;
+}
+
+.faq-item {
+    margin-bottom: 56px;
+}
+
+.faq-item:last-child {
+    margin-bottom: 0;
+}
+
+.faq-item h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #0a2540;
+    margin-bottom: 12px;
+    letter-spacing: -0.014em;
+}
+
+.faq-item p {
+    color: #425466;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.faq-item a {
+    color: #635bff;
+    text-decoration: none;
+    transition: color 0.12s ease;
+}
+
+.faq-item a:hover {
+    color: #5851e8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-top: 72px;
+    margin-top: 120px;
+    border-top: 1px solid #e3e8ee;
+    color: #6b7c93;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+footer strong {
+    color: #425466;
+    font-size: 0.9375rem;
+    font-weight: 600;
+}
+
+.footer-credit {
+    font-size: 0.875rem;
+    color: #6b7c93;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 72px 20px;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    .intro {
+        font-size: 1.0625rem;
+    }
+
+    h2 {
+        font-size: 1.375rem;
+    }
+
+    section {
+        margin-bottom: 96px;
+    }
+
+    .protocol-list a {
+        padding: 18px 0;
+        font-size: 0.9375rem;
+    }
+
+    .cta {
+        padding: 40px 0;
+        margin: 96px 0;
+    }
+
+    .cta-button {
+        padding: 13px 28px;
+        font-size: 0.9rem;
+    }
+
+    .faq {
+        margin-top: 96px;
+    }
+
+    .faq-item {
+        margin-bottom: 48px;
+    }
+
+    .faq-item h3 {
+        font-size: 1.0625rem;
+    }
+
+    .faq-item p {
+        font-size: 0.9375rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 56px 20px;
+    }
+
+    h1 {
+        font-size: 1.875rem;
+    }
+
+    header {
+        margin-bottom: 72px;
+    }
+
+    section {
+        margin-bottom: 80px;
+    }
+
+    .cta {
+        margin: 80px 0;
+    }
+
+    .faq {
+        margin-top: 80px;
+    }
+}
