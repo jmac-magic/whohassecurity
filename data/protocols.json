@@ -1,7 +1,8 @@
 [
   {"name": "Aave", "website": "https://aave.com/"},
-  {"name": "Binance", "website": "https://aave.com/"},
-  {"name": "Coinbase", "website": "https://www.binance.com/"},
+  {"name": "Binance", "website": "http://binance.com/"},
+  {"name": "Coinbase", "website": "https://www.coinbase.com/"},
+  {"name": "Conduit", "website": "https://www.conduit.xyz/"},
   {"name": "EigenLayer", "website": "https://eigenlayer.xyz/"},
   {"name": "Euler Finance", "website": "https://euler.finance"},
   {"name": "Ethereum Foundation", "website": "https://ethereum.org/"},
@@ -18,5 +19,6 @@
   {"name": "Safe", "website": "https://safe.global/"},
   {"name": "Tempo", "website": "https://tempo.xyz/"},
   {"name": "Uniswap", "website": "https://uniswap.org"},
-  {"name": "Wonderland", "website": "https://wonderland.xyz"}
+  {"name": "Wonderland", "website": "https://wonderland.xyz"},
+  {"name": "Yearn", "website": "https://yearn.fi/"}
 ]
